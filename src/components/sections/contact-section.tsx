@@ -44,16 +44,16 @@ export function ContactSection() {
               }`}
             >
               <h2 className="mb-2 font-sans text-4xl font-light leading-[1.05] tracking-tight text-foreground md:mb-3 md:text-7xl lg:text-8xl">
-                Скачай
+                Давайте
                 <br />
-                WatsHap
+                поговорим
               </h2>
-              <p className="font-mono text-xs text-foreground/60 md:text-base">/ Начни общаться прямо сейчас</p>
+              <p className="font-mono text-xs text-foreground/60 md:text-base">/ Свяжитесь с нами</p>
             </div>
 
             <div className="space-y-4 md:space-y-8">
               <a
-                href="#"
+                href="mailto:info@flowrise.dev"
                 className={`group block transition-all duration-700 ${
                   isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0"
                 }`}
@@ -61,10 +61,10 @@ export function ContactSection() {
               >
                 <div className="mb-1 flex items-center gap-2">
                   <Mail className="h-3 w-3 text-foreground/60" />
-                  <span className="font-mono text-xs text-foreground/60">Поддержка</span>
+                  <span className="font-mono text-xs text-foreground/60">Email</span>
                 </div>
                 <p className="text-base text-foreground transition-colors group-hover:text-foreground/70 md:text-2xl">
-                  support@watshap.app
+                  info@flowrise.dev
                 </p>
               </a>
 
@@ -76,9 +76,9 @@ export function ContactSection() {
               >
                 <div className="mb-1 flex items-center gap-2">
                   <MapPin className="h-3 w-3 text-foreground/60" />
-                  <span className="font-mono text-xs text-foreground/60">Доступно</span>
+                  <span className="font-mono text-xs text-foreground/60">Локация</span>
                 </div>
-                <p className="text-base text-foreground md:text-2xl">iOS, Android, Desktop, Web</p>
+                <p className="text-base text-foreground md:text-2xl">Москва, Россия</p>
               </div>
 
               <div
@@ -87,7 +87,7 @@ export function ContactSection() {
                 }`}
                 style={{ transitionDelay: "500ms" }}
               >
-                {["Telegram", "VK", "Instagram", "X"].map((social) => (
+                {["Telegram", "VK", "LinkedIn", "GitHub"].map((social) => (
                   <a
                     key={social}
                     href="#"
@@ -116,7 +116,7 @@ export function ContactSection() {
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
                   className="w-full border-b border-foreground/30 bg-transparent py-1.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-foreground/50 focus:outline-none md:py-2 md:text-base"
-                  placeholder="Как тебя зовут?"
+                  placeholder="Ваше имя"
                 />
               </div>
 
@@ -150,7 +150,7 @@ export function ContactSection() {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   className="w-full border-b border-foreground/30 bg-transparent py-1.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-foreground/50 focus:outline-none md:py-2 md:text-base"
-                  placeholder="Есть вопросы или предложения?"
+                  placeholder="Расскажите о вашем проекте..."
                 />
               </div>
 
@@ -165,10 +165,10 @@ export function ContactSection() {
                   size="lg"
                   className="w-full disabled:opacity-50"
                 >
-                  {isSubmitting ? "Отправка..." : "Написать нам"}
+                  {isSubmitting ? "Отправка..." : "Отправить"}
                 </MagneticButton>
                 {submitSuccess && (
-                  <p className="mt-3 text-center font-mono text-sm text-foreground/80">Сообщение отправлено! Ответим скоро.</p>
+                  <p className="mt-3 text-center font-mono text-sm text-foreground/80">Сообщение отправлено!</p>
                 )}
               </div>
             </form>

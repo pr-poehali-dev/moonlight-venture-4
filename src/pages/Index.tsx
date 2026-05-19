@@ -182,8 +182,8 @@ export default function Index() {
       >
         <Shader className="h-full w-full">
           <Swirl
-            colorA="#25d366"
-            colorB="#128c7e"
+            colorA="#1275d8"
+            colorB="#e19136"
             speed={0.8}
             detail={0.8}
             blend={50}
@@ -195,11 +195,11 @@ export default function Index() {
             fineY={40}
           />
           <ChromaFlow
-            baseColor="#25d366"
-            upColor="#128c7e"
-            downColor="#075e54"
-            leftColor="#34b7f1"
-            rightColor="#25d366"
+            baseColor="#0066ff"
+            upColor="#0066ff"
+            downColor="#d1d1d1"
+            leftColor="#e19136"
+            rightColor="#e19136"
             intensity={0.9}
             radius={1.8}
             momentum={25}
@@ -220,13 +220,13 @@ export default function Index() {
           className="flex items-center gap-2 transition-transform hover:scale-105"
         >
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-foreground/15 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-foreground/25">
-            <span className="font-sans text-xl font-bold text-foreground">W</span>
+            <span className="font-sans text-xl font-bold text-foreground">F</span>
           </div>
-          <span className="font-sans text-xl font-semibold tracking-tight text-foreground">WatsHap</span>
+          <span className="font-sans text-xl font-semibold tracking-tight text-foreground">Flowrise</span>
         </button>
 
         <div className="hidden items-center gap-8 md:flex">
-          {["Главная", "Возможности", "Фичи", "О нас", "Скачать"].map((item, index) => (
+          {["Главная", "Работы", "Услуги", "О нас", "Контакты"].map((item, index) => (
             <button
               key={item}
               onClick={() => scrollToSection(index)}
@@ -245,7 +245,7 @@ export default function Index() {
         </div>
 
         <MagneticButton variant="secondary" onClick={() => scrollToSection(4)}>
-          Скачать
+          Начать
         </MagneticButton>
       </nav>
 
@@ -261,16 +261,16 @@ export default function Index() {
         <section className="flex min-h-screen w-screen shrink-0 flex-col justify-end px-6 pb-16 pt-24 md:px-12 md:pb-24">
           <div className="max-w-3xl">
             <div className="mb-4 inline-block animate-in fade-in slide-in-from-bottom-4 rounded-full border border-foreground/20 bg-foreground/15 px-4 py-1.5 backdrop-blur-md duration-700">
-              <p className="font-mono text-xs text-foreground/90">Новый мессенджер</p>
+              <p className="font-mono text-xs text-foreground/90">Современные технологии</p>
             </div>
             <h1 className="mb-6 animate-in fade-in slide-in-from-bottom-8 font-sans text-6xl font-light leading-[1.1] tracking-tight text-foreground duration-1000 md:text-7xl lg:text-8xl">
               <span className="text-balance">
-                Общайся свободно
+                Цифровое будущее
               </span>
             </h1>
             <p className="mb-8 max-w-xl animate-in fade-in slide-in-from-bottom-4 text-lg leading-relaxed text-foreground/90 duration-1000 delay-200 md:text-xl">
               <span className="text-pretty">
-                WatsHap — мессенджер нового поколения. Быстрые сообщения, голосовые звонки и безопасное общение без лишнего.
+                Создаем современные веб-приложения и цифровые продукты, которые помогают бизнесу расти и развиваться.
               </span>
             </p>
             <div className="flex animate-in fade-in slide-in-from-bottom-4 flex-col gap-4 duration-1000 delay-300 sm:flex-row sm:items-center">
@@ -279,10 +279,10 @@ export default function Index() {
                 variant="primary"
                 onClick={() => scrollToSection(4)}
               >
-                Скачать бесплатно
+                Обсудить проект
               </MagneticButton>
               <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection(2)}>
-                Все возможности
+                Наши услуги
               </MagneticButton>
             </div>
           </div>
